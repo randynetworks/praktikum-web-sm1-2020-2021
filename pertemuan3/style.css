@@ -1,0 +1,18 @@
+body {
+    background-color: #616161;
+    color: #fafafa;
+}
+
+.nav-link {
+    color: #fafafa;
+    margin: 3px;
+}
+
+.nav-link:hover {
+    color: #b4b4b4;
+    margin: 3px;
+}
+
+.card-title {
+    color: #616161;
+}
