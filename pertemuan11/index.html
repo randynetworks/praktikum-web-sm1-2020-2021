@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 11</title>
+</head>
+<body>
+    <script>
+        // Deklarasi Function
+        function getLuas(panjang, lebar) {
+            let luas = panjang * lebar
+            return luas
+        }
+
+        console.log(getLuas(4,5))
+
+        // deklarasi function sebagai expression
+        let luas = function (pajang, lebar) {
+            return panjang * lebar
+        }
+
+        console.log(luas(3,6))
+
+        // Hoisting pada function
+        console.log(luas(3, 6))
+        let getLuas1 = function (panjang, lebar) {
+            return panjang * lebar
+        }
+
+        // memasukan nilai balikan function ke dalam variable
+        let getLuas4 = function ( panjang, lebar) {
+            return panjang * lebar
+        }
+
+        let luas1 = getLuas(7,8)
+        console.log(luas)
+
+        // function sebagai parameter function lainnya
+        let getLuas2 = function (panjang, lebar) {
+            return panjang * lebar
+        }
+
+        function printGetLuas(f){
+            luas = f(4,5)
+            console.log(luas)
+        }
+        printGetLuas(getLuas2)
+
+        // Arrow function
+        const getLuas3 = (panjang, lebar) => panjang * lebar
+        console.log(getLuas3(1,3))
+
+    </script>
+</body>
+</html>
